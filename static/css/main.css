@@ -85,7 +85,8 @@ section#contact {
   }
   section#contact form#contactForm .form-group input,
   section#contact form#contactForm .form-group textarea {
-    padding: 1.25rem;
+   padding-top: 16px;
+   padding-bottom: 16px;
   }
   section#contact form#contactForm .form-group input.form-control {
     height: auto;
@@ -273,7 +274,7 @@ ul{
     margin-left: 0%;
   }
 }
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 767px) {
     
     
     .footer-second{
@@ -385,11 +386,11 @@ footer ul li{
           }
          
            } */
-  @media only screen and (min-width: 768px) and (max-device-width:991px){
+  /* @media only screen and (min-width: 768px) and (max-device-width:991px){
     .bottom-picture{
       padding-left: 0px  !important;
     }
-     }
+     } */
 
      @media only screen and (min-width: 768px) and (max-device-width:1024px){
    
@@ -434,10 +435,10 @@ footer ul li{
         padding-left:10px!important;
         /* margin-left: 10px !important; */
     } 
-     .nav-links a {
+     /* .nav-links a {
      
       font-size: 12px !important;
-  }
+  } */
       .logo{
         margin-top: 10px;
        margin-left: 0%;
@@ -582,7 +583,7 @@ footer ul li{
         display: inline-flex;
       }
       .grid-columfooter-icon>li>a{
-        padding: 0 22px;
+        padding: 0 7px;
       }
 
       .copyright-text{
@@ -640,4 +641,31 @@ footer ul li{
       width: _the_image_width;
       
   
+    }
+
+     @media only screen and (min-width: 320px) and (max-width:425px){
+
+      #donate-btn{
+width: 100%;      
+    } 
+  }
+    @media only screen and (max-width:425px){
+      .membership-text{
+        margin-bottom: 74px;
+      }
+    }
+    @media only screen and (max-width:425px){
+      #contactForm{
+        padding-right: 10px!important;
+        padding-left: 10px!important;
+      }
+    }
+    @media only screen and (max-width:425px){
+      .all-rights{
+        padding-bottom: 44px!important;
+      }
+    }
+    .all-rights{
+      padding-top: 80;
+      padding-bottom: 41px!important;
     }

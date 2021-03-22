@@ -221,3 +221,9 @@ nav ul li #membership-btn {
     background-color: #5062e4;
 
 }
+    @media screen and (max-width: 1140px) and (min-width:1020px) {
+       #membership-btn{
+           padding-left: 10px!important;
+           padding-right: 10px!important;
+       }
+    }
