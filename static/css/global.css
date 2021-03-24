@@ -8,8 +8,9 @@
     outline: 0 !important;
 }
 /* Navigation  */
-
-
+.navbar-top-mobile {
+    display: none;
+}
 nav {
     position: relative;
     top: 0;
@@ -20,7 +21,6 @@ nav {
     min-height: 8vh;
     background-color: #ffffff;
     font-family: "Poppins", sans-serif;
-    
 }
 
 .logo {
@@ -46,32 +46,30 @@ nav {
     font-size: 14px;
 }
 .nav-links li a:hover {
-    border-bottom: 2px solid #FCB300;
+    border-bottom: 2px solid #fcb300;
     font-weight: bold;
-
 }
 
 .burger {
-
     display: none;
 }
 /* ul {
     padding-left: 120px;
 } */
-.logo{
+.logo {
     margin-left: 0;
 }
-nav ul li{
+nav ul li {
     margin-top: 28px;
-    margin-right:25px
+    margin-right: 25px;
 }
-.container{
-max-width: 1040px;
+.container {
+    max-width: 1040px;
 }
 
-#membership-btn{
-    color: #3C50E0;
-    border: 2px solid  #3C50E0;
+#membership-btn {
+    color: #3c50e0;
+    border: 2px solid #3c50e0;
     border-radius: 4px;
     padding: 13px 25px;
     text-align: center;
@@ -81,8 +79,7 @@ max-width: 1040px;
 .burger div {
     width: 25px;
     height: 3px;
-    background-color:#3C50E0 !important;
-;
+    background-color: #3c50e0 !important;
     margin: 5px;
     transition: all 0.3s ease;
 }
@@ -92,8 +89,7 @@ max-width: 1040px;
         width: 60%;
     } */
     .nav-links a:hover {
-        border-bottom: 2px solid #FCB300;
-
+        border-bottom: 2px solid #fcb300;
     }
 }
 
@@ -101,38 +97,60 @@ max-width: 1040px;
     body {
         overflow-x: hidden;
     }
-    
+
     .nav-links {
         position: fixed;
         right: 0px;
-        height: 72vh;
+        height: 100%;
         padding-right: 30px;
-        top: 26vh;
+        top: 0;
         background-color: #ffffff;
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
         width: 100%;
-        padding-left:40px;
-        
+        justify-content: flex-start;
+        align-items: flex-start;
+        /* padding-left: 40px; */
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
     }
-    
-    .nav-links li {
+
+    .nav-links li:not(:first-child) {
+        height: auto !important;
+        margin-bottom: 15px !important;
         opacity: 0;
         margin-right: 10px;
+        margin-top: 30px;
     }
-    
+
     .burger {
         margin: 14px;
         display: block;
         cursor: pointer;
     }
+    .navbar-top-mobile {
+        padding: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 35px !important;
+    }
+    .navbar-top-mobile .burger {
+        padding-right: 0 !important;
+        margin-right: 0 !important;
+    }
+    .navbar-top-mobile .logo {
+        width: 56px;
+        height: 80px;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
 }
 
 .nav-active {
-        transform: translateX(0%);
+    transform: translateX(0%);
 }
 
 @keyframes navLinkFade {
@@ -199,31 +217,29 @@ nav ul li #membership-btn {
     text-align: center;
 } */
 
-.buttons{
+.buttons {
     width: 300px;
-    background-color: #3C50E0;
+    background-color: #3c50e0;
     color: white;
     border-radius: 4px;
     padding: 1rem;
     border: none;
 }
 
-
 #membership-btn:hover {
     color: white;
     background-color: #5062e4;
 }
-#sendMessageButton:hover{
+#sendMessageButton:hover {
     color: white;
     background-color: #5062e4;
 }
-.buttons:hover{
+.buttons:hover {
     background-color: #5062e4;
-
 }
-    @media screen and (max-width: 1140px) and (min-width:1020px) {
-       #membership-btn{
-           padding-left: 10px!important;
-           padding-right: 10px!important;
-       }
+@media screen and (max-width: 1140px) and (min-width: 1020px) {
+    #membership-btn {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
     }
+}
